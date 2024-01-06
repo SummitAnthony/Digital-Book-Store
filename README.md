@@ -6,6 +6,22 @@ A digital book store made with django
 
 Welcome to my Django Digital Book Store project! This has been a practical journey where I've picked up various Django skills. Here's a rundown of what I've learned:
 
+## Screenshots
+
+### Landing Page
+![Landing Page](Project_images/landing_page.JPG)
+
+### Login Page
+![Login Page](Project_images/login_page.JPG)
+
+### Register Page
+![Register Page](Project_images/register_page.JPG)
+
+### Main Page
+![Main Page](Project_images/main_page.JPG)
+
+
+
 ## Learning Outcomes
 
 ### 1. Views
