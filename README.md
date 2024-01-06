@@ -2,7 +2,7 @@
 A digital book store made with django 
 
 
-# My Django Digital Book Store Learning Journey
+# Django Digital Book Store Learning Journey
 
 Welcome to my Django Digital Book Store project! This has been a practical journey where I've picked up various Django skills. Here's a rundown of what I've learned:
 
