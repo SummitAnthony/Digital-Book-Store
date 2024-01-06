@@ -1,0 +1,81 @@
+{% extends 'game/base.html' %}
+{% load static %}
+{% block body %}
+{% load crispy_forms_tags %}
+
+<style>
+    body {
+        background: url('{% static "pictures/background.jpg" %}') no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    .navbar {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.8); 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-header {
+        background-color: #007bff; 
+        color: #fff; /
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+</style>
+
+<nav class="navbar">
+    <!-- Add your navigation links or logo here -->
+</nav>
+
+<div class="col-md-3 mx-auto">
+    <div class="card bg-light" style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); opacity: 0.9; max-width: 400px;">
+        <div class="card-header text-center" style="background-color: transparent; border: none;">
+            <h2>Register</h2>
+        </div>
+        <div class="card-body">
+            <form method="POST" action="{% url 'register' %}" style="padding: 15px;">
+                {% csrf_token %}
+                {% for field in form %}
+                <div class="form-group">
+                    <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
+                    {{ field }}
+                </div>
+                {% endfor %}
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Signup</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+</form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
