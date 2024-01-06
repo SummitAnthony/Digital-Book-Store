@@ -1,0 +1,95 @@
+{% extends 'game/base.html' %}
+{% load static %}
+{% block body %}
+{% load crispy_forms_tags %}
+
+<style>
+    body {
+        background: url('{% static "pictures/background1.jpg" %}') no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.8); 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-header {
+        background-color: #007bff; 
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<nav class="navbar">
+    
+</nav>
+
+<div class="col-md-3 mx-auto">
+    <div class="card bg-light" style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); opacity: 0.9; max-width: 400px;">
+        <div class="card-header text-center" style="background-color: transparent; border: none;">
+            <h2>Add Book</h2>
+        </div>
+        <div class="card-body">
+            
+<form method = "POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Save</button>
+</form>
+
+        </div>
+    </div>
+</div>
+
+
+
+</form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
