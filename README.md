@@ -62,8 +62,8 @@ To dive into this learning experience:
 
 Visit [http://localhost:8000/admin](http://localhost:8000/admin) to access the admin panel and explore the functionalities of the Django Digital Book Store project.
 
-## Contributing
-If you find issues or want to contribute, please follow the [contribution guidelines](CONTRIBUTING.md).
+## Disclaimer
+This project is still not completed yet, lots of more features to add in the future 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. Join me in this open-source journey!
